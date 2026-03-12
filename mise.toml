@@ -1,0 +1,46 @@
+# Manage devtools and tasks with mise-en-place.
+# https://mise.jdx.dev/configuration.html
+
+min_version = "2026.3.0"
+
+[tools]
+# Node.js is a JavaScript server runtime.
+# https://nodejs.org
+node = "24.14.0"
+
+# pnpm is a Node.js package manager.
+# https://pnpm.io
+pnpm = "10.32.1"
+
+[tasks.install]
+# language=sh
+run = """
+  mise install
+"""
+description = "Installs all third-party dependencies with mise-en-place and pnpm."
+alias = ["i"]
+
+[hooks]
+# language=sh
+postinstall = """
+  if [ -z "$CI" ]; then
+    pnpm install --frozen-lockfile --ignore-scripts
+  fi
+"""
+
+[env]
+# Load environment variables from the following .env files in prioritised order.
+# Variables declared in later files override earlier ones.
+# https://mise.jdx.dev/environments/#env-file
+_.file = [".env", ".env.local"]
+
+# Make CLI programs in `node_modules` available directly in the command line.
+# https://mise.jdx.dev/mise-cookbook/nodejs.html#add-node-modules-binaries-to-the-path
+_.path = ["node_modules/.bin"]
+
+[settings]
+# Enable mise hooks.
+experimental = true
+
+# Suppress printing the `run` input command in the console when running a mise task.
+quiet = true
