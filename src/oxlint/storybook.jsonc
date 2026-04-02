@@ -1,0 +1,27 @@
+{
+	"$schema": "../../node_modules/oxlint/configuration_schema.json",
+	"overrides": [
+		{
+			// Storybook decorators and CSF stories.
+			"files": ["src/**/*.decorators.{ts,tsx}", "src/**/*.stories.{ts,tsx}"],
+			"rules": {
+				"eslint/complexity": ["warn", { "max": 12, "variant": "modified" }],
+				"eslint/no-restricted-imports": "off", // Allow importing story- and test-specific files.
+				"eslint/no-unused-vars": ["warn", { "reportUsedIgnorePattern": false }],
+				"react/rules-of-hooks": "off", // Allow hooks in `render` components.
+				"unicorn/numeric-separators-style": "off" // Omit separators in numeric test data (e.g. hardcoded ids and Unix epoch timestamps).
+			}
+		},
+		{
+			// Storybook configuration files.
+			"files": [".storybook/main.ts", ".storybook/preview.ts"],
+			"rules": {
+				"eslint/no-console": "off",
+				"eslint/no-restricted-globals": "off", // Allow access to environment variables through `process.env`.
+				"eslint/no-restricted-imports": "off", // Allow Node.js modules and relative paths in import statements, as path aliases declared in `tsconfig.json` relative to the project root directory are not resolvable from the `.storybook/` directory.
+				"unicorn/filename-case": ["warn", { "case": "kebabCase" }],
+				"unicorn/no-process-exit": "off"
+			}
+		}
+	]
+}
