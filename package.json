@@ -11,6 +11,9 @@
 	"author": "Steffen Diswal",
 	"private": true,
 	"type": "module",
+	"imports": {
+		"#oxfmt/*": "./src/oxfmt/*"
+	},
 	"devDependencies": {
 		"@types/node": "24.12.2",
 		"@typescript/native-preview": "7.0.0-dev.20260413.1",
