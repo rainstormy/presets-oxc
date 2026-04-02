@@ -12,7 +12,8 @@
 	"private": true,
 	"type": "module",
 	"imports": {
-		"#oxfmt/*": "./src/oxfmt/*"
+		"#oxfmt/*": "./src/oxfmt/*",
+		"#oxlint/*": "./src/oxlint/*"
 	},
 	"devDependencies": {
 		"@types/node": "24.12.2",
