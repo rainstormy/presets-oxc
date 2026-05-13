@@ -11,14 +11,22 @@
 	"author": "Steffen Diswal",
 	"private": true,
 	"type": "module",
+	"imports": {
+		"#oxfmt/*": "./src/oxfmt/*",
+		"#oxlint/*": "./src/oxlint/*"
+	},
 	"devDependencies": {
 		"@types/node": "24.12.2",
 		"@typescript/native-preview": "7.0.0-dev.20260413.1",
+		"oxfmt": "0.48.0",
+		"oxlint": "1.63.0",
 		"typescript": "6.0.2"
 	},
 	"// devDependencies": {
 		"@types/node": "Type definitions for the Node.js standard library.",
 		"@typescript/native-preview": "tsgo is a preview of TypeScript 7.",
+		"oxfmt": "Oxfmt is an opinionated code formatter.",
+		"oxlint": "Oxlint is an opinionated JavaScript and TypeScript linter.",
 		"typescript": "TypeScript is a statically typed programming language on top of JavaScript."
 	}
 }
