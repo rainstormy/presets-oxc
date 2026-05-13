@@ -36,7 +36,7 @@ ban-ts-comment\ttypescript\tpedantic\t\t🛠️
 ban-tslint-comment\ttypescript\tstyle\t\t🛠️
 ban-types\ttypescript\tpedantic\t\t
 block-scoped-var\teslint\tsuspicious\t\t
-branches-sharing-code\toxc\tpedantic\t\t
+branches-sharing-code\toxc\tpedantic\t\t💡
 button-has-type\treact\trestriction\t\t
 capitalized-comments\teslint\tstyle\t\t🛠️
 catch-error-name\tunicorn\tstyle\t\t🛠️
@@ -127,6 +127,7 @@ img-redundant-alt\tjsx-a11y\tcorrectness\t\t
 implements-on-classes\tjsdoc\tcorrectness\t\t
 init-declarations\teslint\tstyle\t\t
 inline-script-id\tnextjs\tcorrectness\t\t
+interactive-supports-focus\tjsx-a11y\tcorrectness\t\t💡
 jsx-boolean-value\treact\tstyle\t\t🛠️
 jsx-curly-brace-presence\treact\tstyle\t\t🛠️
 jsx-filename-extension\treact\trestriction\t\t🚧
@@ -150,6 +151,7 @@ jsx-props-no-spread-multi\treact\tcorrectness\t\t🛠️
 jsx-props-no-spreading\treact\tstyle\t\t
 label-has-associated-control\tjsx-a11y\tcorrectness\t\t
 lang\tjsx-a11y\tcorrectness\t\t
+logical-assignment-operators\teslint\tstyle\t\t🚧
 max-classes-per-file\teslint\tpedantic\t\t
 max-dependencies\timport\tpedantic\t\t
 max-depth\teslint\tpedantic\t\t
@@ -239,7 +241,7 @@ no-css-tags\tnextjs\tcorrectness\t\t
 no-cycle\timport\trestriction\t\t
 no-danger\treact\trestriction\t\t
 no-danger-with-children\treact\tcorrectness\t\t
-no-debugger\teslint\tcorrectness\t✅\t🛠️
+no-debugger\teslint\tcorrectness\t✅\t💡
 no-default-export\timport\trestriction\t\t
 no-defaults\tjsdoc\tcorrectness\t\t🚧
 no-delete-var\teslint\tcorrectness\t✅\t
@@ -249,6 +251,7 @@ no-deprecated-delete-set\tvue\tcorrectness\t\t
 no-deprecated-destroyed-lifecycle\tvue\tcorrectness\t\t🛠️
 no-deprecated-events-api\tvue\tcorrectness\t\t
 no-deprecated-functions\tjest\tstyle\t\t🛠️
+no-deprecated-model-definition\tvue\tcorrectness\t\t🚧
 no-deprecated-vue-config-keycodes\tvue\tcorrectness\t\t
 no-did-mount-set-state\treact\tcorrectness\t\t
 no-did-update-set-state\treact\tcorrectness\t\t
@@ -372,6 +375,7 @@ no-namespace\timport\tstyle\t\t🚧
 no-namespace\treact\tsuspicious\t\t
 no-namespace\ttypescript\trestriction\t\t
 no-negated-condition\teslint\tpedantic\t\t🚧
+no-negated-condition\tunicorn\tpedantic\t\t🚧
 no-negation-in-equality-check\tunicorn\tpedantic\t\t💡
 no-nested-ternary\teslint\tstyle\t\t
 no-nested-ternary\tunicorn\tstyle\t\t🛠️
@@ -422,6 +426,7 @@ no-restricted-imports\teslint\trestriction\t\t
 no-restricted-jest-methods\tjest\tstyle\t\t
 no-restricted-matchers\tjest\tstyle\t\t
 no-restricted-matchers\tvitest\tstyle\t\t
+no-restricted-properties\teslint\trestriction\t\t
 no-restricted-types\ttypescript\trestriction\t\t🛠️ 💡
 no-restricted-vi-methods\tvitest\tstyle\t\t
 no-return-assign\teslint\tstyle\t\t
@@ -449,7 +454,9 @@ no-sync-scripts\tnextjs\tcorrectness\t\t
 no-template-curly-in-string\teslint\tstyle\t\t
 no-ternary\teslint\tstyle\t\t
 no-test-prefixes\tjest\tstyle\t\t🛠️
+no-test-prefixes\tvitest\tstyle\t\t🛠️
 no-test-return-statement\tjest\tstyle\t\t
+no-test-return-statement\tvitest\tstyle\t\t
 no-thenable\tunicorn\tcorrectness\t✅\t
 no-this-alias\ttypescript\tcorrectness\t✅\t
 no-this-assignment\tunicorn\tpedantic\t\t
@@ -485,6 +492,7 @@ no-unnecessary-type-constraint\ttypescript\tsuspicious\t\t🚧
 no-unnecessary-type-conversion💭\ttypescript\tsuspicious\t\t
 no-unnecessary-type-parameters💭\ttypescript\tsuspicious\t\t
 no-unneeded-async-expect-function\tjest\tstyle\t\t🛠️
+no-unneeded-async-expect-function\tvitest\tstyle\t\t🛠️
 no-unneeded-ternary\teslint\tsuspicious\t\t⚠️ 🛠️
 no-unreachable\teslint\tcorrectness\t✅\t
 no-unreadable-array-destructuring\tunicorn\tstyle\t\t🚧
@@ -558,7 +566,7 @@ prefer-array-find\tunicorn\tperf\t\t🚧
 prefer-array-flat\tunicorn\tpedantic\t\t⚠️ 🛠️
 prefer-array-flat-map\tunicorn\tperf\t\t🛠️
 prefer-array-index-of\tunicorn\tstyle\t\t🚧
-prefer-array-some\tunicorn\tpedantic\t\t🛠️
+prefer-array-some\tunicorn\tpedantic\t\t💡
 prefer-as-const\ttypescript\tcorrectness\t✅\t🛠️
 prefer-at\tunicorn\tpedantic\t\t⚠️ 🛠️
 prefer-await-to-callbacks\tpromise\tstyle\t\t
@@ -569,11 +577,13 @@ prefer-called-exactly-once-with\tvitest\tstyle\t\t⚠️ 🛠️
 prefer-called-once\tvitest\tstyle\t\t🛠️
 prefer-called-times\tvitest\tstyle\t\t🛠️
 prefer-called-with\tjest\tstyle\t\t🛠️
+prefer-called-with\tvitest\tstyle\t\t🛠️
 prefer-catch\tpromise\tstyle\t\t🚧
 prefer-class-fields\tunicorn\tstyle\t\t🛠️ 💡
 prefer-classlist-toggle\tunicorn\tstyle\t\t🛠️
 prefer-code-point\tunicorn\tpedantic\t\t🛠️
 prefer-comparison-matcher\tjest\tstyle\t\t🛠️
+prefer-comparison-matcher\tvitest\tstyle\t\t🛠️
 prefer-const\teslint\tstyle\t\t🛠️
 prefer-date-now\tunicorn\tpedantic\t\t🛠️
 prefer-default-export\timport\tstyle\t\t
@@ -585,14 +595,17 @@ prefer-dom-node-dataset\tunicorn\tpedantic\t\t🛠️
 prefer-dom-node-remove\tunicorn\tpedantic\t\t🚧
 prefer-dom-node-text-content\tunicorn\tstyle\t\t🛠️
 prefer-each\tjest\tstyle\t\t
+prefer-each\tvitest\tstyle\t\t
 prefer-ending-with-an-expect\tjest\tstyle\t\t
 prefer-enum-initializers\ttypescript\tpedantic\t\t💡
 prefer-equality-matcher\tjest\tstyle\t\t💡
+prefer-equality-matcher\tvitest\tstyle\t\t💡
 prefer-es6-class\treact\tstyle\t\t
 prefer-event-target\tunicorn\tpedantic\t\t
 prefer-expect-assertions\tjest\tstyle\t\t💡
 prefer-expect-assertions\tvitest\tstyle\t\t💡
 prefer-expect-resolves\tjest\tstyle\t\t🛠️
+prefer-expect-resolves\tvitest\tstyle\t\t🛠️
 prefer-expect-type-of\tvitest\tstyle\t\t🛠️
 prefer-exponentiation-operator\teslint\tstyle\t\t🛠️
 prefer-find💭\ttypescript\tstyle\t\t
@@ -601,7 +614,9 @@ prefer-function-component\treact\trestriction\t\t
 prefer-function-type\ttypescript\tstyle\t\t🛠️
 prefer-global-this\tunicorn\tstyle\t\t💡
 prefer-hooks-in-order\tjest\tstyle\t\t
+prefer-hooks-in-order\tvitest\tstyle\t\t
 prefer-hooks-on-top\tjest\tstyle\t\t
+prefer-hooks-on-top\tvitest\tstyle\t\t
 prefer-import-from-vue\tvue\tcorrectness\t\t🛠️
 prefer-import-in-mock\tvitest\tstyle\t\t🛠️
 prefer-import-meta-properties\tunicorn\tpedantic\t\t🛠️
@@ -614,10 +629,13 @@ prefer-keyboard-event-key\tunicorn\tstyle\t\t🛠️
 prefer-literal-enum-member\ttypescript\trestriction\t\t
 prefer-logical-operator-over-ternary\tunicorn\tstyle\t\t💡
 prefer-lowercase-title\tjest\tstyle\t\t🛠️
+prefer-lowercase-title\tvitest\tstyle\t\t🛠️
 prefer-math-min-max\tunicorn\tpedantic\t\t🛠️
 prefer-math-trunc\tunicorn\tpedantic\t\t💡
 prefer-mock-promise-shorthand\tjest\tstyle\t\t🛠️
+prefer-mock-promise-shorthand\tvitest\tstyle\t\t🛠️
 prefer-mock-return-shorthand\tjest\tstyle\t\t🛠️
+prefer-mock-return-shorthand\tvitest\tstyle\t\t🛠️
 prefer-modern-dom-apis\tunicorn\tstyle\t\t💡
 prefer-modern-math-apis\tunicorn\trestriction\t\t🚧
 prefer-module\tunicorn\trestriction\t\t🚧
@@ -649,11 +667,14 @@ prefer-return-this-type💭\ttypescript\tstyle\t\t🛠️
 prefer-set-has\tunicorn\tperf\t\t⚠️ 🛠️
 prefer-set-size\tunicorn\tcorrectness\t✅\t🛠️
 prefer-snapshot-hint\tjest\tcorrectness\t\t
+prefer-snapshot-hint\tvitest\tcorrectness\t\t
 prefer-spread\teslint\tstyle\t\t
 prefer-spread\tunicorn\tstyle\t\t🛠️
 prefer-spy-on\tjest\tstyle\t\t💡
+prefer-spy-on\tvitest\tstyle\t\t💡
 prefer-strict-boolean-matchers\tvitest\tstyle\t\t🛠️
 prefer-strict-equal\tjest\tstyle\t\t🛠️
+prefer-strict-equal\tvitest\tstyle\t\t🛠️
 prefer-string-raw\tunicorn\tstyle\t\t🛠️
 prefer-string-replace-all\tunicorn\tpedantic\t\t🛠️
 prefer-string-slice\tunicorn\tpedantic\t\t🛠️
@@ -665,6 +686,7 @@ prefer-tag-over-role\tjsx-a11y\tcorrectness\t\t
 prefer-template\teslint\tstyle\t\t🛠️
 prefer-ternary\tunicorn\tstyle\t\t🚧
 prefer-to-be\tjest\tstyle\t\t🛠️
+prefer-to-be\tvitest\tstyle\t\t🛠️
 prefer-to-be-falsy\tvitest\tstyle\t\t🛠️
 prefer-to-be-object\tvitest\tstyle\t\t🛠️
 prefer-to-be-truthy\tvitest\tstyle\t\t🛠️
@@ -672,7 +694,9 @@ prefer-to-contain\tjest\tstyle\t\t🛠️
 prefer-to-contain\tvitest\tstyle\t\t🛠️
 prefer-to-have-been-called\tjest\tstyle\t\t🛠️
 prefer-to-have-been-called-times\tjest\tstyle\t\t🛠️
+prefer-to-have-been-called-times\tvitest\tstyle\t\t🛠️
 prefer-to-have-length\tjest\tstyle\t\t🛠️
+prefer-to-have-length\tvitest\tstyle\t\t🛠️
 prefer-todo\tjest\tstyle\t\t🛠️
 prefer-todo\tvitest\tstyle\t\t🛠️
 prefer-top-level-await\tunicorn\tpedantic\t\t🚧
@@ -691,6 +715,7 @@ require-await💭\ttypescript\tpedantic\t\t💡
 require-awaited-expect-poll\tvitest\tcorrectness\t\t
 require-default-export\tvue\tsuspicious\t\t
 require-hook\tjest\tstyle\t\t
+require-hook\tvitest\tstyle\t\t
 require-local-test-context-for-concurrent-snapshots\tvitest\tcorrectness\t\t
 require-mock-type-parameters\tvitest\tcorrectness\t\t
 require-module-attributes\tunicorn\tstyle\t\t💡
@@ -711,14 +736,17 @@ require-returns-description\tjsdoc\tpedantic\t\t
 require-returns-type\tjsdoc\tpedantic\t\t
 require-test-timeout\tvitest\trestriction\t\t
 require-to-throw-message\tjest\tcorrectness\t\t
+require-to-throw-message\tvitest\tcorrectness\t\t
 require-top-level-describe\tjest\tstyle\t\t
 require-top-level-describe\tvitest\tstyle\t\t
 require-typed-ref\tvue\tstyle\t\t
+require-unicode-regexp\teslint\tpedantic\t\t🚧
 require-yield\teslint\tcorrectness\t✅\t
 require-yields\tjsdoc\tcorrectness\t\t
 restrict-plus-operands💭\ttypescript\tpedantic\t\t
 restrict-template-expressions💭\ttypescript\tcorrectness\t✅\t
 return-await💭\ttypescript\tpedantic\t\t🛠️ 💡
+return-in-computed-property\tvue\tcorrectness\t\t
 role-has-required-aria-props\tjsx-a11y\tcorrectness\t\t
 role-supports-aria-props\tjsx-a11y\tcorrectness\t\t
 rules-of-hooks\treact\tpedantic\t\t
@@ -750,6 +778,7 @@ use-unknown-in-catch-callback-variable💭\ttypescript\trestriction\t\t💡
 valid-define-emits\tvue\tcorrectness\t\t🚧
 valid-define-props\tvue\tcorrectness\t\t🚧
 valid-describe-callback\tjest\tcorrectness\t\t
+valid-describe-callback\tvitest\tcorrectness\t\t
 valid-expect\tjest\tcorrectness\t\t💡
 valid-expect\tvitest\tcorrectness\t\t💡
 valid-expect-in-promise\tjest\tcorrectness\t\t
