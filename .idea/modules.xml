@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/presets-oxc.iml" filepath="$PROJECT_DIR$/.idea/presets-oxc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/presets-web.iml" filepath="$PROJECT_DIR$/.idea/presets-web.iml" />
     </modules>
   </component>
 </project>

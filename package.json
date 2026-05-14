@@ -1,11 +1,11 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@rainstormy/presets-oxc",
+	"name": "@rainstormy/presets-web",
 	"version": "0.0.0",
-	"bugs": "https://github.com/rainstormy/presets-oxc/issues",
+	"bugs": "https://github.com/rainstormy/presets-web/issues",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/rainstormy/presets-oxc.git"
+		"url": "https://github.com/rainstormy/presets-web.git"
 	},
 	"license": "MIT",
 	"author": "Steffen Diswal",

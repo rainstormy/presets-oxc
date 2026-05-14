@@ -1,1 +1,7 @@
-# Presets for Oxfmt and Oxlint
+# Tooling Presets for Web Development
+
+## Oxfmt
+
+## Oxlint
+
+## TypeScript
